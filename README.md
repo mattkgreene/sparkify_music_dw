@@ -20,6 +20,7 @@ Finally, the various information is gathered from the log_files and generated in
 2) Second, run etl.py to ingest data into the various tables: songplays, songs, artists, users, and time
 
 Example Query to get a users listening history:
+
 SELECT users.user_id, users.first_name, users.last_name, users.level, count(songplay_id) 
 FROM users 
 JOIN songplays 
